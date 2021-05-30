@@ -2,18 +2,18 @@
 // Portfolio section styling
 //
 
-#LanguageModels {
-    .LanguageModels-item {
+#portfolio {
+    .portfolio-item {
         max-width: 26rem;
         margin-left: auto;
         margin-right: auto;
 
-        .LanguageModels-link {
+        .portfolio-link {
             position: relative;
             display: block;
             margin: 0 auto;
 
-            .LanguageModels-hover {
+            .portfolio-hover {
                 display: flex;
                 position: absolute;
                 width: 100%;
@@ -24,32 +24,32 @@
                 opacity: 0;
                 transition: opacity ease-in-out 0.25s;
 
-                .LanguageModels-hover-content {
+                .portfolio-hover-content {
                     font-size: 1.25rem;
                     color: white;
                 }
             }
 
             &:hover {
-                .LanguageModels-hover {
+                .portfolio-hover {
                     opacity: 1;
                 }
             }
         }
 
-        .LanguageModels-caption {
+        .portfolio-caption {
             padding: 1.5rem;
             text-align: center;
             background-color: $white;
 
-            .LanguageModels-caption-heading {
+            .portfolio-caption-heading {
                 font-size: 1.5rem;
                 font-family: $headings-font-family;
                 font-weight: $headings-font-weight;
                 margin-bottom: 0;
             }
 
-            .LanguageModels-caption-subheading {
+            .portfolio-caption-subheading {
                 font-style: italic;
                 font-family: $subheadings-font-family;
             }
@@ -57,7 +57,7 @@
     }
 }
 
-.LanguageModels-modal {
+.portfolio-modal {
     .modal-dialog {
         margin: 1rem;
         max-width: 100vw;
