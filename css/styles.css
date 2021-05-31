@@ -11387,3 +11387,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: #f1f1f1;
 }
 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
