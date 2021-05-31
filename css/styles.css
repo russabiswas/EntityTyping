@@ -11394,4 +11394,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-right: auto;
  
 }
+* {
+  box-sizing: border-box;
+}
 
+.columns {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.rows::after {
+  content: "";
+  clear: both;
+  display: table;
+}
