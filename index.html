@@ -92,25 +92,24 @@
         
                     <button type="button" class="collapsible"><b>Word2Vec</b></button>
                     <div class="content">
-                    <img src="img/word2vec.png" alt="..." width="400" height="400">
+                    <img src="img/word2vec.png" alt="..." width="300" height="300">
 
-                        <p> Word2vec is a two-layer neural net that processes text by vectorizing words. Word2vec can utilize either of two model architectures to produce a distributed representation of words: continuous bag-of-words (CBOW) or continuous skip-gram. In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words. </p>
+                        <p> It  aims  to  learn  the  distributed  representation  for  words  reduc-ing  the  high  dimensional  word  representations  in  a  large  corpus.  The  CBOWWord2Vec model predicts the current word from a window of context words andthe skip-gram model predicts the context words based on the current word. In this work, pre-trained Google Word2Vec model is used.</p>
                     </div>
                     <button type="button" class="collapsible"<b>GloVe</b></button>
                     <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>GloVe exploits the global word-word co-occurrence statistics in the cor-pus  with  the  underlying  intuition  that  the  ratios  of  word-word  co-occurrence probabilities encode some form of the meaning of the words.</p>
                     </div>
                     <button type="button" class="collapsible"><b>Wikipedia2Vec</b></button>
                     <div class="content">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                     </div>
+                        <p>The  model  jointly  learns  word  and  entity  embeddings  from Wikipedia where similar words and entities are close to one another in the vector space.  It  uses  three  submodels  to  learn  the  representation  namely:  Wikipedia Link Graph Model, Word-based skip-gram model, and Anchor context model.</p> 
+                    </div>
                     <button type="button" class="collapsible"><b>BERT</b></button>
                     <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
+                        <p>Bidirectional Encoder Representations from Transformers is a contex-tual information based embedding approach in which pretraining on bidirectional representations from unlabeled text by using the left and the right context in allthe layers is performed.</p>  </div>
                     <button type="button" class="collapsible"><b>Character Embedding</b></button>
                     <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Character embedding represents the latent representations of characters trained over a corpus which helps in determining the vector representations of out-of-vocabulary words.</p>
                     </div>
 
             <script>
@@ -243,7 +242,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Entity Typing</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">In this work, pre-trained Word2Vec modelon  Google  News  dataset,  GloVe  model  pre-trained  on  Wikipedia  2014  ver-sion and Gigaword 5, Wikipedia2Vec model pre-trained on English Wikipedia 2018 version, and pre-trained English character embeddings derived from GloVe840B/300D dataset are used with a vector dimension of 300. The average ofall word vectors in the entity names is taken as the vector representation of theentities. For BERT, the average of the last four hidden layers of the model istaken as a representation of the names of entities and the dimension used is 768.</h3>
                 </div>
                 <ul class="timeline">
                     <li>
