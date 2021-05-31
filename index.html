@@ -140,71 +140,26 @@
                     
                 </div>
                 
+                <button type="button" class="collapsible"><b>Embeddings of the Entity Names</b></button>
+                    <div class="content">
+                   
+
+                        <p> The embedding of the entity names are generated using  Neural Language Models (NLMs). To do so, pre-trained Word2Vec model on Google News dataset, GloVe model pre-trained on Wikipedia 2014 version and Gigaword 5, Wikipedia2Vec model pre-trained on English Wikipedia 2018 version, and pre-trained English character embeddings derived from GloVe 840B/300D dataset are used with a vector dimension of 300. The average of all word vectors in the entity names is taken as the vector representation of the entities. For BERT, the average of the last four hidden layers of the model is taken as a representation of the names of entities and the dimension used is 768.</p>
+                    </div>
+                
                 
                 <button type="button" class="collapsible"><b>Classification</b></button>
                     <div class="content">
-                    <img src="img/classifier.jpg" alt="..." width="1000" height="400">
+                    <img src="img/classifier.jpg" alt="..." class="center">
 
-                        <p> Two classifiers have been built on top of the Neural Language Models (NLMs): <ol>
+                        <p> Two classifiers have been built on top of the NLMs: <ol>
                          <li>Fully Connected Neural Network (FCNN), and</li> 
                             <li>Convolutional Neural Network (CNN).</li> </ol> 
                             A three-layered FCNN model consisting of two dense layers with ReLU as an activation function has been used on the top of the vectors                             generated from the NLMs. The softmax function is used in the last layer to calculate the probability of the entities belonging to                                 different classes. The CNN model consists of two 1-D convolutional layers followed by a global max-pooling layer. ReLu is used as an                             activation function in the convolutional layers and the output of the pooling layer is then passed through a fully connected final                               layer, in which the softmax function predicts the classes of the entities.</p>
                     </div>
-          <!--        <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div> -->
             
+                <button type="button" class="collapsible"><b>Experiments</b></button>
+                    <div class="content">    
             <table class="tg">
 <thead>
   <tr>
@@ -224,7 +179,7 @@
 </thead>
 <tbody>
   <tr>
-    <td class="tg-kt03">Word2Vec</td>
+      <td class="tg-kt03"><b>Word2Vec</b></td>
     <td class="tg-kt03">80.11</td>
     <td class="tg-kt03">46.71</td>
     <td class="tg-kt03">72.08</td>
@@ -233,7 +188,7 @@
     <td class="tg-kt03">25.91</td>
   </tr>
   <tr>
-    <td class="tg-kt03">GloVe</td>
+      <td class="tg-kt03"><b>GloVe</b></td>
     <td class="tg-kt03">83.34</td>
     <td class="tg-kt03">54.06</td>
     <td class="tg-kt03">82.62</td>
@@ -242,7 +197,7 @@
     <td class="tg-kt03">31.3</td>
   </tr>
   <tr>
-    <td class="tg-kt03">Wikipedia2Vec</td>
+      <td class="tg-kt03"><b>Wikipedia2Vec</b></td>
     <td class="tg-kt03"><b>91.14</b></td>
     <td class="tg-kt03">60.47</td>
     <td class="tg-kt03"><b>90.68</b></td>
@@ -251,7 +206,7 @@
     <td class="tg-kt03">36.97</td>
   </tr>
   <tr>
-    <td class="tg-kt03">BERT</td>
+      <td class="tg-kt03"><b>BERT</b></td>
     <td class="tg-kt03">67.37</td>
     <td class="tg-kt03"><b>62.27</b></td>
     <td class="tg-kt03">64.63</td>
@@ -260,7 +215,7 @@
     <td class="tg-kt03">35.55</td>
   </tr>
   <tr>
-    <td class="tg-kt03">Character Embedding</td>
+      <td class="tg-kt03"><b>Character Embedding</b></td>
     <td class="tg-kt03">73.43</td>
     <td class="tg-kt03">58.13</td>
     <td class="tg-kt03">72.66</td>
@@ -270,7 +225,7 @@
   </tr>
 </tbody>
 </table>
-
+ </div>
             
             
         </section>
