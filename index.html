@@ -129,17 +129,14 @@ The training objective of GloVe is to learn word vectors such that their dot pro
                          <li>Wikipedia Link Graph Model comprises of an undirected link graph in which the nodes are the Wikipedia entities and there exists an edge between two nodes if the page of one entity links to the other or if both pages link each other. It learns entity embeddings by predicting neighboring entities in the graph.</li> 
                          <li>Word-based skip-gram model learns word embeddings by predicting neighboring words given each word in a text contained on a Wikipedia page.</li>
                          <li>Anchor context model learns embeddings by predicting neighboring words given each entity and aims to place similar words and entities near one another in the vector space </li>
-                         </ul> 
-                        
-                        
-                        
-                        
-                        
+                         </ul>                     
                         </p> 
                     </div>
                     <button type="button" class="collapsible"><b>BERT</b></button>
                     <div class="content">
-                        <p>Bidirectional Encoder Representations from Transformers is a contex-tual information based embedding approach in which pretraining on bidirectional representations from unlabeled text by using the left and the right context in allthe layers is performed.</p>  </div>
+                        <img src="img/bert.jpg" alt="..." class="center">
+                        <p>Bidirectional Encoder Representations from Transformers is a contextual information based embedding approach in which pretraining on bidirectional representations from unlabeled text by using the left and the right context in all the layers is performed. BERT makes use of Transformer, an attention mechanism that learns contextual relations between words (or sub-words) in a text. In its vanilla form, Transformer includes two separate mechanisms — an encoder that reads the text input and a decoder that produces a prediction for the task. Since BERT’s goal is to generate a language model, only the encoder mechanism is necessary. The encoder reads the entire sequence of words at once. Therefore it is considered bidirectional, which allows the model to learn the context of a word based on all of its surroundings.                                     
+                        </p>  </div>
                     <button type="button" class="collapsible"><b>Character Embedding</b></button>
                     <div class="content">
                     <p>Character embedding represents the latent representations of characters trained over a corpus which helps in determining the vector representations of out-of-vocabulary words.</p>
