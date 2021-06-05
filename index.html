@@ -114,7 +114,19 @@
                     </div>
                     <button type="button" class="collapsible"><b>Wikipedia2Vec</b></button>
                     <div class="content">
-                        <p>The  model  jointly  learns  word  and  entity  embeddings  from Wikipedia where similar words and entities are close to one another in the vector space.  It  uses  three  submodels  to  learn  the  representation  namely:  Wikipedia Link Graph Model, Word-based skip-gram model, and Anchor context model.</p> 
+                        <img src="img/wiki2vec.jpg" alt="..." class="center">
+                        <p>The model jointly learns word and entity embeddings from Wikipedia where similar words and entities are close to one another in the vector space.  It comprises of three submodels namely Wikipedia Link Graph Model, Word-based skip-gram model, and Anchor context model.
+                        <ul>
+                         <li>Wikipedia Link Graph Model comprises of an undirected link graph in which the nodes are the Wikipedia entities and there exists an edge between two nodes if the page of one entity links to the other or if both pages link each other. It learns entity embeddings by predicting neighboring entities in the graph.</li> 
+                         <li>Word-based skip-gram model learns word embeddings by predicting neighboring words given each word in a text contained on a Wikipedia page.</li>
+                         <li>Anchor context model learns embeddings by predicting neighboring words given each entity and aims to place similar words and entities near one another in the vector space </li>
+                         </ul> 
+                        
+                        
+                        
+                        
+                        
+                        </p> 
                     </div>
                     <button type="button" class="collapsible"><b>BERT</b></button>
                     <div class="content">
