@@ -11410,3 +11410,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   clear: both;
   display: table;
 }
+
+.how-to-cite{
+ background-color: lightgrey;
+  width: auto;
+  margin: auto;
+}
