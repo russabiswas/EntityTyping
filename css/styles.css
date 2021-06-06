@@ -11412,3 +11412,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: left;
   margin: 20px;
 }
+.coverpic{
+width: 100%;
+z-index: 0;
+}
