@@ -11413,6 +11413,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin: 20px;
 }
 .coverpic{
-width: 100%;
-z-index: 0;
+height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
