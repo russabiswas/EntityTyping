@@ -115,7 +115,7 @@
                     <div class="content">
                         <img src="img/glove.jpg" alt="..." class="center">
                     <p>GloVe exploits the global word-word co-occurrence statistics in the corpus  with  the  underlying  intuition  that  the  ratios  of  word-word  co-occurrence probabilities encode some form of the meaning of the words. It is essentially a log-bilinear model with a weighted least-squares objective. 
-The training objective of GloVe is to learn word vectors such that their dot product equals the logarithm of the words' probability of co-occurrence. Owing to the fact that the logarithm of a ratio equals the difference of logarithms, this objective associates (the logarithm of) ratios of co-occurrence probabilities with vector differences in the word vector space. Because these ratios can encode some form of meaning, this information gets encoded as vector differences as well.                        
+The training objective of GloVe is to learn word vectors such that their dot product equals the logarithm of the words' probability of co-occurrence. Owing to the fact that the logarithm of a ratio equals the difference of logarithms, this objective associates (the logarithm of) ratios of co-occurrence probabilities with vector differences in the word vector space. These ratios encode some form of meaning of the words, hence, this information gets encoded as vector differences as well.                        
                         
                         
                         
@@ -139,7 +139,8 @@ The training objective of GloVe is to learn word vectors such that their dot pro
                         </p>  </div>
                     <button type="button" class="collapsible"><b>Character Embedding</b></button>
                     <div class="content">
-                    <p>Character embedding represents the latent representations of characters trained over a corpus which helps in determining the vector representations of out-of-vocabulary words.</p>
+                     <img src="img/charembed.jpg" alt="..." class="center">
+                    <p>Character embedding represents the latent representations of characters trained over a corpus which helps in determining the vector representations of out-of-vocabulary words. Character level embedding uses one-dimensional convolutional neural network (1D-CNN) to find numeric representation of words by looking at their character-level compositions.</p>
                     </div>          
                 </div>
             
